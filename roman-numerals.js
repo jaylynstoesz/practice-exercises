@@ -1,4 +1,4 @@
-// Convert Roman number input to numbers
+// Convert Roman numeral inputs to numbers
 
 var input = ('III')
 var input2 = ('IV')
