@@ -1,15 +1,16 @@
-// convert Roman number input to numbers
+// Convert Roman number input to numbers
 
 var input = ('III')
 var input2 = ('IV')
 var input3 = ('XII')
 var input4 = ('XIV')
 var input5 = ('LXXVII')
+
 var numbers = {
   'I': 1,
   'V': 5,
   'X': 10,
-  'L': 50,
+  'L': 50
 }
 
 function convert (input) {
@@ -25,11 +26,7 @@ function convert (input) {
   }
 
   return converted.reduce(function (current, next) {
-    if (current < next) {
-      return next - current
-    } else {
-      return current + next
-    }
+    return current < next ? next - current : current + next
   })
 }
 
