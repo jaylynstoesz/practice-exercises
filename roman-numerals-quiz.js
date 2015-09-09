@@ -10,8 +10,8 @@
 // variable and an index counter.
 
 // However, I would not use a recursive function to solve this problem. I would use the .reduce method in
-// roman-numerals.js, as it's basically the same functionality built into JavaScript. In the other solution you do
-// not need global variables to get the job done, while here you need three.
+// roman-numerals.js, as it's basically the same functionality built into JavaScript. Also, n the other
+// solution you do not need global variables to get the job done, while here you need three.
 
 var input = ('III')
 var input2 = ('IV')
