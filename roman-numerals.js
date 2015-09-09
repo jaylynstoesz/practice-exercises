@@ -2,7 +2,7 @@
 
 var input = ('III')
 var input2 = ('IV')
-var input3 = ('XXX')
+var input3 = ('XXV')
 var input4 = ('XIV')
 var input5 = ('LXXVII')
 
@@ -19,7 +19,7 @@ function convert (input) {
   })
 
   var lastIndex = converted.length - 1
-  if (converted[lastIndex] !== 1 && converted[lastIndex] !== converted[lastIndex - 1]) {
+  if (converted[lastIndex] !== 1 && converted[lastIndex - 1] === 1) {
     var temp = []
     temp.push(converted[lastIndex] - converted[lastIndex - 1])
     converted = converted.slice(0, lastIndex - 1).concat(temp)
