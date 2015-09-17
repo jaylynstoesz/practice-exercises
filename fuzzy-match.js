@@ -5,7 +5,6 @@ function fuzzyMatch (inputs, searchTerm, tolerance) {
   return inputs.filter(function (input) {
     var splitInput = input.toLowerCase().split("")
     var splitSearchTerm = searchTerm.toLowerCase().split("")
-    var matches = []
     for (var i = 0; i < splitInput.length; i++) {
       counter = 0
       for (var j = 0; j < splitSearchTerm.length; j++) {
