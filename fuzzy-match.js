@@ -1,4 +1,4 @@
-var inputs = ["James", "Samantha", "Mark", "Sarah", "Manuel"]
+var names = ["James", "Samantha", "Mark", "Sarah", "Manuel"]
 
 function fuzzyMatch (inputs, searchTerm, tolerance) {
 
@@ -21,4 +21,4 @@ function fuzzyMatch (inputs, searchTerm, tolerance) {
 
 }
 
-console.log(fuzzyMatch(inputs, "man", 1))
+console.log(fuzzyMatch(names, "man", 1))
