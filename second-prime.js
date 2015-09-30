@@ -1,23 +1,24 @@
 // find the prime numbers following a given input.
 
-var number = 13
+var number = 22
 var results = []
 
-function getPrime (input, divisor, count) {
+function getPrime (input, count, divisor) {
   var next = input + 1
+  if (!divisor) { divisor = 2 }
   if (results.length === count) {
     console.log(results)
     return results
   }
   if (next % divisor === 0 && next === divisor) {
     results.push(next)
-    getPrime(next, 2, count)
+    getPrime(next, count)
   } else if (next % divisor === 0 && next !== divisor) {
-    getPrime(next++, 2, count)
+    getPrime(next++, count)
   } else if (next % divisor !== 0) {
     divisor++
-    getPrime(input, divisor, count)
+    getPrime(input, count, divisor)
   }
 }
 
-getPrime(number, 2, 5)
+getPrime(number, 4)
